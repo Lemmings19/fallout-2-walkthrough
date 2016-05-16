@@ -7,3 +7,5 @@ A copy of a comprehensive Fallout 2 walkthrough written by Per Jorner. This uplo
 >--Shadowman
 
 Source: http://user.tninet.se/~jyg699a/fallout2.html
+
+v1.3
