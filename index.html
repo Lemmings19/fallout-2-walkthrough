@@ -1,11 +1,33 @@
 <!-- saved from url=(0044)http://user.tninet.se/~jyg699a/fallout2.html -->
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Fallout 2 Walkthrough</title>
+
+    <meta name="description" content="A comprehensive Fallout 2 walkthrough." />
+    <meta name="keywords" content="fallout, fallout 2, walkthrough" />
+
+    <meta property="og:title" content="The Nearly Ultimate Fallout 2 Guide" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="A complrehensive Fallout 2 walkthrough." />
+    <meta property="og:determiner" content="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_CA" />
+    <meta property="og:locale:alternate" content="en_GB" />
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style type="text/css">
+        html {
+          font-family: sans-serif;
+          -ms-text-size-adjust: 100%;
+          -webkit-text-size-adjust: 100%;
+        }
+
         body {
+            margin: 0;
             background: #fff8e2;;
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
@@ -18,22 +40,6 @@
           font-family: inherit;
           font-size: inherit;
           line-height: inherit;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-        h2 {
-            font-size: 32px;
-        }
-        h3 {
-            font-size: 28px;
-        }
-        h4 {
-            font-size: 24px;
-        }
-        h5 {
-            font-size: 20px;
         }
 
         a {
@@ -49,11 +55,24 @@
             color: #0015ff;
         }
 
+        table,
+        th,
+        td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
         .container {
           margin-right: auto;
           margin-left: auto;
-          padding-left: 1px;
-          padding-right: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
         }
         @media (min-width: 768px) {
           .container {
@@ -73,6 +92,7 @@
             border: 1px solid #2e6da4;
             border-radius: 4px;
             line-height: 1.3333333;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -80,10 +100,15 @@
             background-color: #777777;
         }
 
-        .btn-fixed {
+        .to-top-container {
+            position: relative;
+        }
+
+        .btn-to-top {
             position: fixed;
+            right: 100px;
             bottom: 5px;
-            right: 5px;
+            z-index: 99;
         }
 
         .dark {
@@ -110,7 +135,7 @@
 
         <!-- using a form is just an easy way to style a link like a button -->
         <form action="#contents">
-            <input type="submit" value="to index" class="btn btn-fixed" />
+            <input type="submit" value="to index" class="btn btn-to-top" />
         </form>
 
         <h1>The Nearly Ultimate Fallout 2 Guide</h1><br>
