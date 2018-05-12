@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style type="text/css">
         body {
-            background: #e7e7e7;
+            background: #fff8e2;;
             font-family: 'Roboto', sans-serif;
         }
 
@@ -23,22 +23,11 @@
             color: #0015ff;
         }
 
-        button {
-            font-size: 21px;
-            border: 1px solid #2e6da4;
-            border-radius: 4px;
-            line-height: 1.3333333;
-        }
-
-        button:hover {
-            background-color: #fff;
-        }
-
         .container {
           margin-right: auto;
           margin-left: auto;
-          padding-left: 15px;
-          padding-right: 15px;
+          padding-left: 1px;
+          padding-right: 1px;
         }
         @media (min-width: 768px) {
           .container {
@@ -50,16 +39,30 @@
             width: 970px;
           }
         }
-        .container-fluid {
-          margin-right: auto;
-          margin-left: auto;
-          padding-left: 15px;
-          padding-right: 15px;
+
+        .btn {
+            background-color: #efefef;
+            color: #000000;
+            font-size: 21px;
+            border: 1px solid #2e6da4;
+            border-radius: 4px;
+            line-height: 1.3333333;
+        }
+
+        .btn:hover {
+            color: #ffffff;
+            background-color: #777777;
+        }
+
+        .btn-fixed {
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
         }
 
         .dark {
-            background: #444;
-            color: #fff;
+            background: #504e44;
+            color: #ffffff;
         }
     </style>
     <script>
@@ -78,17 +81,23 @@
 </head>
 <body>
     <div class="container">
+
+        <!-- using a form is just an easy way to style a link like a button -->
+        <form action="#contents">
+            <input type="submit" value="to index" class="btn btn-fixed" />
+        </form>
+
         <h1>The Nearly Ultimate Fallout 2 Guide</h1><br>
 
-        <button id="themeButton" onclick="toggleTheme()">use dark theme</button> &nbsp; <a href="original_source.html">view original</a><br><br><br>
+        <button id="themeButton" onclick="toggleTheme()" class="btn">use dark theme</button> &nbsp; <a href="original_source.html">view original</a><br><br><br>
 
         <b>Version 1.3.1<br>
         Written and coded by Per Jorner</b><br><br>
 
-        <i>Let me enlighten you, grasshopper. Fallout 2 is cool because it's a nonlinear, nonclassbased kickass postnuclear computer roleplaying game with a high replayabillity value. Fallout 2 allows you to play your character the way you want. If you want to play a goodie-two-shoes, you can. If you want to play an evil bastard, you can (Yes, you really can hit children in the groin with a sledgehammer). If you want to play a moron who can hardly talk because of his low intelligence, you can.</i><br>
+        <em>Let me enlighten you, grasshopper. Fallout 2 is cool because it's a nonlinear, nonclassbased kickass postnuclear computer roleplaying game with a high replayabillity value. Fallout 2 allows you to play your character the way you want. If you want to play a goodie-two-shoes, you can. If you want to play an evil bastard, you can (Yes, you really can hit children in the groin with a sledgehammer). If you want to play a moron who can hardly talk because of his low intelligence, you can.</em><br>
         --Shadowman<br><br><hr>
 
-        <h3>Table of contents</h3>
+        <h3 id="contents">Table of contents</h3>
 
         <ol>
         <li><a href="#intro">Introduction</a><br>
