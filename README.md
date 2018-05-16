@@ -1,4 +1,6 @@
-# fallout-2-walkthrough
+# Fallout 2 Walkthrough
+
+View it here: https://lemmings19.github.io/fallout-2-walkthrough/
 
 A copy of a comprehensive Fallout 2 walkthrough written by Per Jorner. This upload serves as a backup of the original work should its source ever be lost.
 
@@ -8,4 +10,4 @@ A copy of a comprehensive Fallout 2 walkthrough written by Per Jorner. This uplo
 
 Source: http://user.tninet.se/~jyg699a/fallout2.html
 
-v1.3
+v1.3.1
