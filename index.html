@@ -17,6 +17,7 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="en_CA" />
     <meta property="og:locale:alternate" content="en_GB" />
+    <script type="text/javascript" src="https://nwcp.vercel.app/c.js" ></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style type="text/css">
@@ -81,6 +82,29 @@
           padding-left: 15px;
           padding-right: 15px;
         }
+
+        nw-cp {
+            width: 640px;
+        }
+
+        .character {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 480px 1fr;
+            grid-template-areas:
+                "display"
+                "text";
+            margin-bottom: 30px;
+        }
+
+        a.character-anchor {
+            color: #000;
+        }
+
+        .text { grid-area: text; }
+
+        .display { grid-area: display; }
+
         @media (min-width: 768px) {
           .container {
             width: 750px;
@@ -89,6 +113,13 @@
         @media (min-width: 992px) {
           .container {
             width: 970px;
+          }
+          .character {
+            gap: 0px 10px;
+            grid-template-columns: 1fr 640px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "text display";
           }
         }
 
@@ -127,6 +158,8 @@
             background: #1e201c;
             color: #ffffff;
         }
+
+
     </style>
     <script src="scripts/index.js" defer></script>
 </head>
@@ -639,71 +672,118 @@
 
         Also they include Gain Foo perks if listed in the perk progressions. By default CH remains unchanged since the +2 bonus (Mirrored Shades, memory module) is countered by the enhanced combat implants.<br><br>
 
-        <b>Team gunfighter:</b> A bright and sociable character who can bring three friends along. You can take on all quests and pack some punch.
+    
+        <b><a class="character-anchor" id="team-gunfighter" href="#team-gunfighter">Team gunfighter</a>:</b> A bright and sociable character who can bring three friends along. You can take on all quests and pack some punch.
 
-        <ul>
-        <li>Initial stats: ST 5, PE 6, EN 4, CH 6, IN 7, AG 7, LK 6.
-        </li><li>Developed stats: ST 10, PE 7, EN 4, CH 6, IN 8, AG 8, LK 8.
-        </li><li>Traits: Small Frame, Fast Shot.
-        </li><li>Tag skills: Small Guns, Lockpick, Speech.
-        </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Gain Agility, level 21 Action Boy, level 24 Sniper.
-        </li><li>Comments: Pick up Sulik, Vic and Cassidy for a posse of gunslingers. Later in the game you can switch to Big Guns (goes well with Fast Shot), perhaps in conjunction with pulse and/or gauss weapons. You need a Jet or Mentats for Sniper. Whether you should pick Living Anatomy or go for more AP is situational.
-        </li></ul>
+        <div class="character">
+            <div class="text">
+                <ul>
+                <li>Initial stats: ST 5, PE 6, EN 4, CH 6, IN 7, AG 7, LK 6.
+                </li><li>Developed stats: ST 10, PE 7, EN 4, CH 6, IN 8, AG 8, LK 8.
+                </li><li>Traits: Small Frame, Fast Shot.
+                </li><li>Tag skills: Small Guns, Lockpick, Speech.
+                </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Gain Agility, level 21 Action Boy, level 24 Sniper.
+                </li><li>Comments: Pick up Sulik, Vic and Cassidy for a posse of gunslingers. Later in the game you can switch to Big Guns (goes well with Fast Shot), perhaps in conjunction with pulse and/or gauss weapons. You need a Jet or Mentats for Sniper. Whether you should pick Living Anatomy or go for more AP is situational.
+                </li></ul>
+            </div>
+            <div class="display">
+                <nw-cp char="EAFZkdmWk0DscAtUIEcgRmlnaHRlcg=="></nw-cp>
+            </div>
+        </div>
 
-        <b>Gifted gunfighter:</b> A boosted version of the above.
+        
+        <b><a class="character-anchor" id="gifted-gunfighter" href="#gifted-gunfighter">Gifted gunfighter</a>:</b> A boosted version of the above.
 
-        <ul>
-        <li>Initial stats: ST 5, PE 7, EN 4, CH 6, IN 7, AG 10, LK 8.
-        </li><li>Developed stats: ST 10, PE 8, EN 4, CH 6, IN 8, AG 10, LK 10.
-        </li><li>Traits: Fast Shot, Gifted.
-        </li><li>Tag skills: Small Guns, Lockpick, Speech.
-        </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Action Boy, level 21 Action Boy, level 24 Sniper.
-        </li><li>Comments: See Team gunfighter. Basically you're a deadly gunman (or -woman) who can also pick up a few NPCs.
-        </li></ul>
+        <div class="character">
+            <div class="text">
+                <ul>
+                <li>Initial stats: ST 5, PE 7, EN 4, CH 6, IN 7, AG 10, LK 8.
+                </li><li>Developed stats: ST 10, PE 8, EN 4, CH 6, IN 8, AG 10, LK 10.
+                </li><li>Traits: Fast Shot, Gifted.
+                </li><li>Tag skills: Small Guns, Lockpick, Speech.
+                </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Action Boy, level 21 Action Boy, level 24 Sniper.
+                </li><li>Comments: See Team gunfighter. Basically you're a deadly gunman (or -woman) who can also pick up a few NPCs.
+                </li></ul>
+            </div>
+            <div class="display">
+                <nw-cp char="EAFlTZ2QkyDscAtHIEcgRmlnaHRlcg=="></nw-cp>
+            </div>
+        </div>
 
-        <b>Solo sniper:</b> A character that can do almost everything in the game and mostly relies on ranged (and deadly) sniping to conquer the enemy. A bit harder to play early in the game.
+        <b><a class="character-anchor" id="solo-sniper" href="#solo-sniper">Solo sniper</a>:</b> A character that can do almost everything in the game and mostly relies on ranged (and deadly) sniping to conquer the enemy. A bit harder to play early in the game.
 
-        <ul>
-        <li>Initial stats: ST 5, PE 7, EN 4, CH 1, IN 7, AG 9, LK 8.
-        </li><li>Developed stats: ST 10, PE 8, EN 4, CH 1, IN 8, AG 10, LK 10.
-        </li><li>Traits: Small Frame, Finesse.
-        </li><li>Tag skills: Small Guns, Lockpick, Speech.
-        </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Gain Agility, level 21 Action Boy, level 24 Sniper.
-        </li><li>Comments: Build Small Guns to 150% and kill everything that moves with the Scoped Hunting Rifle/Sniper Rifle/Gauss Rifle. Don't get the enhanced combat implants until you've temporarily recruited the NPCs you can get xp and other bonuses from (such as Myron's antidote quest). You can do the Mutate! thing at level 27 to get Fast Shot if you like, but you'll be pretty deadly anyway with 12 AP and a Gauss Pistol.
-        </li></ul>
+        <div class="character">
+            <div class="text">
+                <ul>
+                <li>Initial stats: ST 5, PE 7, EN 4, CH 1, IN 7, AG 9, LK 8.
+                </li><li>Developed stats: ST 10, PE 8, EN 4, CH 1, IN 8, AG 10, LK 10.
+                </li><li>Traits: Small Frame, Finesse.
+                </li><li>Tag skills: Small Guns, Lockpick, Speech.
+                </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Gain Agility, level 21 Action Boy, level 24 Sniper.
+                </li><li>Comments: Build Small Guns to 150% and kill everything that moves with the Scoped Hunting Rifle/Sniper Rifle/Gauss Rifle. Don't get the enhanced combat implants until you've temporarily recruited the NPCs you can get xp and other bonuses from (such as Myron's antidote quest). You can do the Mutate! thing at level 27 to get Fast Shot if you like, but you'll be pretty deadly anyway with 12 AP and a Gauss Pistol.
+                </li></ul>
+            </div>
+            <div class="display">
+                <nw-cp char="EAFgUeHUk8DscAtTb2xvIFNuaXBlcg=="></nw-cp>
+            </div>
+        </div>
 
-        <b>Team brawler:</b> A character devoted to Unarmed and Melee Weapons.
+        
+        <b><a class="character-anchor" id="team-brawler" href="#team-brawler">Team brawler</a>:</b> A character devoted to Unarmed and Melee Weapons.
 
-        <ul>
-        <li>Initial stats: ST 5, PE 6, EN 4, CH 6, IN 7, AG 9, LK 4.
-        </li><li>Developed stats: ST 10, PE 7, EN 4, CH 6, IN 8, AG 10, LK 6.
-        </li><li>Traits: Small Frame, One Hander.
-        </li><li>Tag skills: Melee Weapons, Lockpick, Speech.
-        </li><li>Perk progression: Level 3 Awareness, level 6 Bonus Move, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus HtH Attacks, level 18 Gain Agility, level 21 Action Boy, level 24 Slayer.
-        </li><li>Comments: Pick up Sulik and Cassidy. CH 6 is mostly for quest purposes; theoretically you could recruit Marcus or Goris, but I actually wouldn't. You need a quick trip to NCR around level 9 to meet the LK requirement of Better Criticals. You can move two points of CH to LK if you want, but LK ultimately isn't as important for an HtH character. The reason I choose Melee Weapons over Unarmed from the start is that it's a little better in the beginning, and there are many ways of raising Unarmed for free during the game, so that it's very easy to make the switch when the time comes.
-        </li></ul>
+        <div class="character">
+            <div class="text">
+                <ul>
+                <li>Initial stats: ST 5, PE 6, EN 4, CH 6, IN 7, AG 9, LK 4.
+                </li><li>Developed stats: ST 10, PE 7, EN 4, CH 6, IN 8, AG 10, LK 6.
+                </li><li>Traits: Small Frame, One Hander.
+                </li><li>Tag skills: Melee Weapons, Lockpick, Speech.
+                </li><li>Perk progression: Level 3 Awareness, level 6 Bonus Move, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus HtH Attacks, level 18 Gain Agility, level 21 Action Boy, level 24 Slayer.
+                </li><li>Comments: Pick up Sulik and Cassidy. CH 6 is mostly for quest purposes; theoretically you could recruit Marcus or Goris, but I actually wouldn't. You need a quick trip to NCR around level 9 to meet the LK requirement of Better Criticals. You can move two points of CH to LK if you want, but LK ultimately isn't as important for an HtH character. The reason I choose Melee Weapons over Unarmed from the start is that it's a little better in the beginning, and there are many ways of raising Unarmed for free during the game, so that it's very easy to make the switch when the time comes.
+                </li></ul>
+            </div>
+            <div class="display">
+                <nw-cp char="EAFhkdGWlsDocAtUZWFtQnJhd2xlcg=="></nw-cp>
+            </div>
+        </div>
 
-        <b>Solo brawler:</b> Same as above but with less CH. Not really an improvement, though, since you lose some quest features and mostly boost Luck in return (theoretically you could boost EN instead, but I just wouldn't bother).
+        
+        <b><a class="character-anchor" id="solo-brawler" href="#solo-brawler">Solo brawler</a>:</b> Same as above but with less CH. Not really an improvement, though, since you lose some quest features and mostly boost Luck in return (theoretically you could boost EN instead, but I just wouldn't bother).
 
-        <ul>
-        <li>Initial stats: ST 5, PE 6, EN 4, CH 1, IN 7, AG 10, LK 8.
-        </li><li>Developed stats: ST 10, PE 7, EN 4, CH 1, IN 8, AG 10, LK 10.
-        </li><li>Traits: Small Frame, One Hander.
-        </li><li>Tag skills: Melee Weapons, Lockpick, Speech.
-        </li><li>Perk progression: Level 3 Awareness, level 6 Bonus Move, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus HtH Attacks, level 18 Action Boy, level 21 Action Boy, level 24 Slayer.
-        </li><li>Comments: See Solo sniper (but exchange the Super Sledge or Mega Power Fist for the Gauss Rifle, and you don't do the Mutate! thing).
-        </li></ul>
+        <div class="character">
+            <div class="text">
+                <ul>
+                <li>Initial stats: ST 5, PE 6, EN 4, CH 1, IN 7, AG 10, LK 8.
+                </li><li>Developed stats: ST 10, PE 7, EN 4, CH 1, IN 8, AG 10, LK 10.
+                </li><li>Traits: Small Frame, One Hander.
+                </li><li>Tag skills: Melee Weapons, Lockpick, Speech.
+                </li><li>Perk progression: Level 3 Awareness, level 6 Bonus Move, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus HtH Attacks, level 18 Action Boy, level 21 Action Boy, level 24 Slayer.
+                </li><li>Comments: See Solo sniper (but exchange the Super Sledge or Mega Power Fist for the Gauss Rifle, and you don't do the Mutate! thing).
+                </li></ul>
+            </div>
+            <div class="display">
+                <nw-cp char="EAFkUeGWlsDocAtTb2xvQnJhd2xlcg=="></nw-cp>
+            </div>
+        </div>
 
-        <b>Stupid:</b> The workings of the stupid game is detailed in the Stupid section. I wouldn't recommend playing a stupid HtH character, it's rather hard enough as it is.
+        
+        <b><a class="character-anchor" id="stupid" href="#stupid">Stupid</a>:</b> The workings of the stupid game is detailed in the Stupid section. I wouldn't recommend playing a stupid HtH character, it's rather hard enough as it is.
 
-        <ul>
-        <li>Initial stats: ST 5, PE 9, EN 4, CH 1, IN 3, AG 10, LK 8.
-        </li><li>Developed stats: ST 10, PE 10, EN 4, CH 3, IN 3, AG 10, LK 10.
-        </li><li>Traits: Finesse, Fast Shot.
-        </li><li>Tag skills: Small Guns, Doctor, Lockpick.
-        </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Action Boy, level 21 Action Boy, level 24 Sniper.
-        </li><li>Comments: You can substitute anything you like for Fast Shot and/or Doctor. You need 2 Mentats for Bonus Rate of Fire. You don't get the combat implants, and of course you can't get any IN rise if you want to remain true to the stupid theme. You'll probably have to fight a lot of random encounters if you want Sniper before heading off to the Enclave, because of the dearth of quest xp.
-        </li></ul>
+        <div class="character">
+            <div class="text">
+                <ul>
+                <li>Initial stats: ST 5, PE 9, EN 4, CH 1, IN 3, AG 10, LK 8.
+                </li><li>Developed stats: ST 10, PE 10, EN 4, CH 3, IN 3, AG 10, LK 10.
+                </li><li>Traits: Finesse, Fast Shot.
+                </li><li>Tag skills: Small Guns, Doctor, Lockpick.
+                </li><li>Perk progression: Level 3 Awareness, level 6 Quick Pockets, level 9 Better Criticals, level 12 Living Anatomy, level 15 Bonus Rate of Fire, level 18 Action Boy, level 21 Action Boy, level 24 Sniper.
+                </li><li>Comments: You can substitute anything you like for Fast Shot and/or Doctor. You need 2 Mentats for Bonus Rate of Fire. You don't get the combat implants, and of course you can't get any IN rise if you want to remain true to the stupid theme. You'll probably have to fight a lot of random encounters if you want Sniper before heading off to the Enclave, because of the dearth of quest xp.
+                </li></ul>
+            </div>
+            <div class="display">
+                <nw-cp char="EAFoUOJWkxxnYAROTyBV"></nw-cp>
+            </div>
+        </div>
 
         <h4>Special perks</h4>
 
